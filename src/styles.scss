@@ -1,0 +1,16 @@
+//BOOTSTRAP ADDED BY VK
+@import '~@nebular/bootstrap/styles/globals';
+// this is your created themes.scss file, make sure the path to the file is correct
+@import 'themes';
+
+// framework component styles which will use your new theme
+@import '~@nebular/theme/styles/globals';
+
+//import auth styles for all themes (default, cosmic, corporate). vijay
+@import '~@nebular/auth/styles/all';
+
+// install the framework
+@include nb-install() {
+  @include nb-theme-global();
+  @include nb-auth-global(); // added by vijay
+};
